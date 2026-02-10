@@ -8,9 +8,9 @@ from django.utils.translation import gettext_lazy as _
 # Create your models here.
 
 class Concert(models.Model):
-    # concert_name
-    # duration
-    # city
+    concert_name = models.CharField(max_length=255)
+    duration = models.IntegerField()
+    city = models.CharField(255)
     # date
 
     def __str__(self):
